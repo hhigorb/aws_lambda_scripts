@@ -4,7 +4,7 @@ Welcome to the AWS Lambda Functions project! This guide will help you set up and
 
 1. Open your terminal and run the command aws configure.
 2. Enter your Access Key, Secret Key, and preferred Region when prompted.
-3. Run the command `export AWS_PROFILE="your-aws-profile`
+3. Run the command `export AWS_PROFILE="your-aws-profile"`
 
 ## Setting Up a Virtual Environment
 
