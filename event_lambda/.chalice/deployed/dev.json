@@ -1,0 +1,22 @@
+{
+  "resources": [
+    {
+      "name": "managed-layer",
+      "resource_type": "lambda_layer",
+      "layer_version_arn": "arn:aws:lambda:us-east-1:987303968034:layer:ptax_data_to_s3-dev-managed-layer:4"
+    },
+    {
+      "name": "default-role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::987303968034:role/ptax_data_to_s3-dev",
+      "role_name": "ptax_data_to_s3-dev"
+    },
+    {
+      "name": "ptax_data_to_s3",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-1:987303968034:function:ptax_data_to_s3-dev-ptax_data_to_s3"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}

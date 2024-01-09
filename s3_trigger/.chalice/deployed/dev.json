@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "name": "managed-layer",
+      "resource_type": "lambda_layer",
+      "layer_version_arn": "arn:aws:lambda:us-east-1:987303968034:layer:s3_trigger-dev-managed-layer:2"
+    },
+    {
+      "name": "default-role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::987303968034:role/s3_trigger-dev",
+      "role_name": "s3_trigger-dev"
+    },
+    {
+      "name": "s3_json_data_to_parquet",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-1:987303968034:function:s3_trigger-dev-s3_json_data_to_parquet"
+    },
+    {
+      "name": "s3_json_data_to_parquet-s3event",
+      "resource_type": "s3_event",
+      "bucket": "data-engineering-develop",
+      "lambda_arn": "arn:aws:lambda:us-east-1:987303968034:function:s3_trigger-dev-s3_json_data_to_parquet"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}

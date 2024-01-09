@@ -1,0 +1,10 @@
+version: '3'
+services:
+  my-container:
+    image: event_lambda_local:latest
+    ports:
+      - "9000:8080"
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_REGION=${AWS_REGION}

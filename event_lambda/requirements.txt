@@ -1,0 +1,5 @@
+boto3==1.33.11
+pandas==2.1.4
+holidays==0.38
+chalice==1.29.0
+pyarrow==14.0.1

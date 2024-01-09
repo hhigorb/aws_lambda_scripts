@@ -1,0 +1,4 @@
+boto3==1.33.11
+pandas==2.1.4
+pyarrow==14.0.1
+holidays==0.38
